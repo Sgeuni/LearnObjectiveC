@@ -17,7 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self refresh];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)userDefaultsDidChange:(NSNotification *) notification {
+    [self refresh];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,6 +38,26 @@
     // If there's an update, use NCUpdateResultNewData
 
     completionHandler(NCUpdateResultNewData);
+}
+
+- (id) initWithCoder: (NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userDefaultsDidChange:) name:NSUserDefaultsDidChangeNotification object:nil];
+    }
+    
+    return self;
+}
+
+- (void) refresh {
+    NSUserDefaults * sharedUserDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.leanGeuni.widget"];
+    self.label.text = [sharedUserDefaults objectForKey:@"ExtensionString"];
+}
+
+- (IBAction)buttonOpenApp:(id)sender {
+    NSURL *url = [NSURL URLWithString:@"AppName://edu.geuni.LeanWidget"];
+    [self.extensionContext openURL: url completionHandler:nil];
 }
 
 @end

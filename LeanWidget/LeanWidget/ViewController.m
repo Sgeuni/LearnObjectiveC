@@ -25,5 +25,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonApply:(id)sender {
+
+    NSUserDefaults *sharedUserDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.leanGeuni.widget"]; //@"groupName"
+    [sharedUserDefaults setObject:self.textField.text forKey:@"ExtensionString"];
+    [sharedUserDefaults synchronize];
+}
 
 @end
