@@ -35,9 +35,9 @@
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-33.86
                                                             longitude:151.20
                                                                  zoom:6];
+    // mapWithFrame에 uiView의 bounds를 넣는다.
     GMSMapView *mapView = [GMSMapView mapWithFrame:self.uiView.bounds camera:camera];
     mapView.myLocationEnabled = YES;
-    
     
     // Creates a marker in the center of the map.
     GMSMarker *marker = [[GMSMarker alloc] init];
