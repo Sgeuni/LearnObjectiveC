@@ -7,14 +7,10 @@ google api key link = https://developers.google.com/maps/documentation/ios-sdk/s
 막힌 부분
 1. NSLocationWhenInUseUsageDescription 관련 permission<br />
 해결 -> info.plist open , 아래코드 추가
-<pre>
-
-\'
+```html
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>맵 이용하는 이유 입력</string> 	
-\'
-
-</pre>
+```
 
 <br />
 
