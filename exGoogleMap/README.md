@@ -8,9 +8,12 @@ google api key link = https://developers.google.com/maps/documentation/ios-sdk/s
 1. NSLocationWhenInUseUsageDescription 관련 permission<br />
 해결 -> info.plist open , 아래코드 추가
 <pre>
+{
 <key>NSLocationWhenInUseUsageDescription</key>
-<string>맵 이용하는 이유 입력</string> 
+<string>맵 이용하는 이유 입력</string> 	
+}
 </pre>
+
 <br />
 
 2. 그리고자하는 uiView에 GoogleMap이 원하는 사이즈에 맞게 안그려진다.<br />
