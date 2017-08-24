@@ -24,6 +24,6 @@ NSURL * url = [NSURL URLWithString:@"**AppName**://**PRODUCT_BUNDLE_IDENTIFIER**
 <br />
 
 2. 앱 그룹 설정 <br />
-Target (app) -> Capabilities -> AppGroups 선택 <br />
-Widget도 동일하게 그룹 설정 <br />
-group 이 없다면 '+' 버튼 누른 후 생성 
+	Target (app) -> Capabilities -> AppGroups 선택 <br />
+	Widget도 동일하게 그룹 설정 <br />
+	group 이 없다면 '+' 버튼 누른 후 생성 
