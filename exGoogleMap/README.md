@@ -1,7 +1,7 @@
 # Google Map Example
 ## Google map을 원하는 uiView 사이즈 및 위치에 맞게 그리기
 
-![alt text](https://github.com/Sgeuni/LearnObjectiveC/blob/master/exGoogleMap/screenShot.png) </br>
+![alt text](https://github.com/Sgeuni/LearnObjectiveC/blob/master/exGoogleMap/screenShot.png =100x) </br>
 google api key link = https://developers.google.com/maps/documentation/ios-sdk/start?hl=ko 
 
 막힌 부분
