@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -51,8 +51,26 @@
                                 <rect key="frame" x="320" y="35" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzy-RB-7Ss">
+                                <rect key="frame" x="66" y="318" width="51" height="30"/>
+                                <state key="normal" title="page01"/>
                                 <connections>
-                                    <segue destination="KS9-dK-kNl" kind="show" id="o4F-yl-kmD"/>
+                                    <action selector="buttonPage01:" destination="BYZ-38-t0r" eventType="touchUpInside" id="36t-E7-xV1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7J-tO-oe1">
+                                <rect key="frame" x="161" y="318.5" width="53" height="30"/>
+                                <state key="normal" title="page02"/>
+                                <connections>
+                                    <action selector="buttonPage02:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tq1-lN-XRV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EI-uG-Ebe">
+                                <rect key="frame" x="256" y="318" width="53" height="30"/>
+                                <state key="normal" title="page03"/>
+                                <connections>
+                                    <action selector="buttonPage03:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q81-vb-56u"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,10 +79,16 @@
                             <constraint firstItem="dzA-4F-CTu" firstAttribute="top" secondItem="oC5-aa-WzU" secondAttribute="bottom" constant="15" id="4Ou-l3-Han"/>
                             <constraint firstItem="9Vn-qU-CuS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7B8-lb-coH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oC5-aa-WzU" secondAttribute="trailing" constant="50" id="7D9-FR-XNZ"/>
+                            <constraint firstItem="o7J-tO-oe1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MT9-wz-QYJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dzA-4F-CTu" secondAttribute="trailing" constant="50" id="Nim-jI-AnI"/>
                             <constraint firstItem="9Vn-qU-CuS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="PN5-OH-T63"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3EI-uG-Ebe" secondAttribute="trailing" constant="50" id="WH5-6f-VZH"/>
+                            <constraint firstItem="o7J-tO-oe1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YaS-cd-hgx"/>
+                            <constraint firstItem="Nzy-RB-7Ss" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="iIT-11-Q74"/>
                             <constraint firstItem="oC5-aa-WzU" firstAttribute="top" secondItem="9Vn-qU-CuS" secondAttribute="bottom" constant="10" id="kEh-8n-ufm"/>
+                            <constraint firstItem="3EI-uG-Ebe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pYN-Md-16U"/>
                             <constraint firstItem="oC5-aa-WzU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="uJB-y7-npj"/>
+                            <constraint firstItem="Nzy-RB-7Ss" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uZO-tO-9F7"/>
                             <constraint firstItem="oC5-aa-WzU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z8q-Wg-7O9"/>
                         </constraints>
                     </view>
@@ -75,92 +99,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="65" y="37"/>
-        </scene>
-        <!--Page01 View Controller-->
-        <scene sceneID="50D-aY-fWQ">
-            <objects>
-                <viewController id="KS9-dK-kNl" customClass="Page01ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="p0H-0L-6wa"/>
-                        <viewControllerLayoutGuide type="bottom" id="CBo-FW-JEO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4T4-ar-NWn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e28-Ep-cv8">
-                                <rect key="frame" x="159" y="323" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRR-tK-rcB">
-                                <rect key="frame" x="320" y="28" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <segue destination="SZ7-xr-E1W" kind="show" id="RCJ-WH-QRi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOA-hq-aaP">
-                                <rect key="frame" x="26" y="30" width="39" height="30"/>
-                                <state key="normal" title="Close"/>
-                                <connections>
-                                    <action selector="buttonCloseClick:" destination="KS9-dK-kNl" eventType="touchUpInside" id="tEf-UA-Hto"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.92003484944693392" green="1" blue="0.82280091617983286" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="e28-Ep-cv8" firstAttribute="centerX" secondItem="4T4-ar-NWn" secondAttribute="centerX" id="Aaw-S9-9Xa"/>
-                            <constraint firstItem="VOA-hq-aaP" firstAttribute="leading" secondItem="4T4-ar-NWn" secondAttribute="leadingMargin" constant="10" id="KTK-6w-gCa"/>
-                            <constraint firstItem="e28-Ep-cv8" firstAttribute="centerY" secondItem="4T4-ar-NWn" secondAttribute="centerY" id="l28-XY-dp9"/>
-                            <constraint firstItem="VOA-hq-aaP" firstAttribute="top" secondItem="p0H-0L-6wa" secondAttribute="bottom" constant="10" id="rgH-t3-okq"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GSk-kI-CMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="710" y="38"/>
-        </scene>
-        <!--Page02 View Controller-->
-        <scene sceneID="UAt-Yw-IkC">
-            <objects>
-                <viewController id="SZ7-xr-E1W" customClass="Page02ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3dW-zb-QYD"/>
-                        <viewControllerLayoutGuide type="bottom" id="R7f-oa-xfe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JJB-AK-NQp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pky-KO-dbg">
-                                <rect key="frame" x="158" y="323" width="59" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7I8-Ts-Kub">
-                                <rect key="frame" x="26" y="30" width="39" height="30"/>
-                                <state key="normal" title="Close"/>
-                                <connections>
-                                    <action selector="buttonCloseClick:" destination="SZ7-xr-E1W" eventType="touchUpInside" id="a79-iu-PSh"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.81175366586759801" green="1" blue="0.92786410372577699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="7I8-Ts-Kub" firstAttribute="leading" secondItem="JJB-AK-NQp" secondAttribute="leadingMargin" constant="10" id="TKP-Zb-zwN"/>
-                            <constraint firstItem="pky-KO-dbg" firstAttribute="centerX" secondItem="JJB-AK-NQp" secondAttribute="centerX" id="VfB-gz-E7M"/>
-                            <constraint firstItem="pky-KO-dbg" firstAttribute="centerY" secondItem="JJB-AK-NQp" secondAttribute="centerY" id="co2-Mo-6be"/>
-                            <constraint firstItem="7I8-Ts-Kub" firstAttribute="top" secondItem="3dW-zb-QYD" secondAttribute="bottom" constant="10" id="wm0-GZ-Hvz"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u7I-rZ-zj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1340" y="38"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
+#import "Page01ViewController.h"
+#import "Page02ViewController.h"
+#import "Page03ViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +22,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MainViewController *mainViewController = storyboard.instantiateInitialViewController;
+    
+    self.mainController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    self.window.rootViewController = self.mainController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -46,6 +59,28 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    if([[url host] isEqualToString:@"page"]){
+        if([[url path] isEqualToString:@"/main"]){
+            [self.mainController setViewControllers:@[[[UIViewController alloc] init]] animated:YES];
+        }
+        else if([[url path] isEqualToString:@"/page01"]){
+            [self.mainController pushViewController:[[Page01ViewController alloc] init] animated:YES];
+        }
+        else if([[url path] isEqualToString:@"/page02"]){
+            [self.mainController pushViewController:[[Page02ViewController alloc] init] animated:YES];
+        }
+        else if([[url path] isEqualToString:@"/page03"]){
+            [self.mainController pushViewController:[[Page03ViewController alloc] init] animated:YES];
+        }
+        return YES;
+    }
+    else{
+        return NO;
+    }
+}
+
 
 
 @end

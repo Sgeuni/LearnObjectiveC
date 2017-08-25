@@ -16,16 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)buttonCloseClick:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+
+- (IBAction)buttonGoMain:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"GeuniWidget://page/main"] options:@{} completionHandler:^(BOOL success) {
+        if (success) {
+            NSLog(@"success");
+        }
+    }];
 }
+
 
 /*
 #pragma mark - Navigation
