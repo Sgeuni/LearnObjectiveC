@@ -74,11 +74,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="65" y="37"/>
         </scene>
-        <!--View Controller-->
+        <!--Page01 View Controller-->
         <scene sceneID="50D-aY-fWQ">
             <objects>
-                <viewController id="KS9-dK-kNl" sceneMemberID="viewController">
+                <viewController id="KS9-dK-kNl" customClass="Page01ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p0H-0L-6wa"/>
                         <viewControllerLayoutGuide type="bottom" id="CBo-FW-JEO"/>
@@ -101,30 +102,31 @@
                                     <segue destination="SZ7-xr-E1W" kind="show" id="RCJ-WH-QRi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJd-Vy-oTv">
-                                <rect key="frame" x="24" y="28" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Prev"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOA-hq-aaP">
+                                <rect key="frame" x="26" y="30" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="6TB-JB-Ef7"/>
+                                    <action selector="buttonCloseClick:" destination="KS9-dK-kNl" eventType="touchUpInside" id="tEf-UA-Hto"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92003484944693392" green="1" blue="0.82280091617983286" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="e28-Ep-cv8" firstAttribute="centerX" secondItem="4T4-ar-NWn" secondAttribute="centerX" id="Aaw-S9-9Xa"/>
+                            <constraint firstItem="VOA-hq-aaP" firstAttribute="leading" secondItem="4T4-ar-NWn" secondAttribute="leadingMargin" constant="10" id="KTK-6w-gCa"/>
                             <constraint firstItem="e28-Ep-cv8" firstAttribute="centerY" secondItem="4T4-ar-NWn" secondAttribute="centerY" id="l28-XY-dp9"/>
+                            <constraint firstItem="VOA-hq-aaP" firstAttribute="top" secondItem="p0H-0L-6wa" secondAttribute="bottom" constant="10" id="rgH-t3-okq"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSk-kI-CMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="799" y="141"/>
+            <point key="canvasLocation" x="710" y="38"/>
         </scene>
-        <!--View Controller-->
+        <!--Page02 View Controller-->
         <scene sceneID="UAt-Yw-IkC">
             <objects>
-                <viewController id="SZ7-xr-E1W" sceneMemberID="viewController">
+                <viewController id="SZ7-xr-E1W" customClass="Page02ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3dW-zb-QYD"/>
                         <viewControllerLayoutGuide type="bottom" id="R7f-oa-xfe"/>
@@ -139,28 +141,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGj-Ss-37Z">
-                                <rect key="frame" x="24" y="28" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Prev"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7I8-Ts-Kub">
+                                <rect key="frame" x="26" y="30" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
                                 <connections>
-                                    <segue destination="KS9-dK-kNl" kind="show" id="KEZ-Dl-KHa"/>
+                                    <action selector="buttonCloseClick:" destination="SZ7-xr-E1W" eventType="touchUpInside" id="a79-iu-PSh"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.81175366586759801" green="1" blue="0.92786410372577699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="7I8-Ts-Kub" firstAttribute="leading" secondItem="JJB-AK-NQp" secondAttribute="leadingMargin" constant="10" id="TKP-Zb-zwN"/>
                             <constraint firstItem="pky-KO-dbg" firstAttribute="centerX" secondItem="JJB-AK-NQp" secondAttribute="centerX" id="VfB-gz-E7M"/>
                             <constraint firstItem="pky-KO-dbg" firstAttribute="centerY" secondItem="JJB-AK-NQp" secondAttribute="centerY" id="co2-Mo-6be"/>
+                            <constraint firstItem="7I8-Ts-Kub" firstAttribute="top" secondItem="3dW-zb-QYD" secondAttribute="bottom" constant="10" id="wm0-GZ-Hvz"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7I-rZ-zj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="140.77961019490255"/>
+            <point key="canvasLocation" x="1340" y="38"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="KEZ-Dl-KHa"/>
-    </inferredMetricsTieBreakers>
 </document>

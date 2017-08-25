@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C77EC47B1F4FE598001E533D /* Page01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77EC47A1F4FE598001E533D /* Page01ViewController.m */; };
+		C77EC47E1F4FE5AA001E533D /* Page02ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77EC47D1F4FE5AA001E533D /* Page02ViewController.m */; };
 		C7AD091E1F4E57720053E500 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AD091D1F4E57720053E500 /* main.m */; };
 		C7AD09211F4E57720053E500 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AD09201F4E57720053E500 /* AppDelegate.m */; };
 		C7AD09241F4E57720053E500 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AD09231F4E57720053E500 /* ViewController.m */; };
@@ -60,6 +62,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C77EC4791F4FE598001E533D /* Page01ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page01ViewController.h; sourceTree = "<group>"; };
+		C77EC47A1F4FE598001E533D /* Page01ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page01ViewController.m; sourceTree = "<group>"; };
+		C77EC47C1F4FE5AA001E533D /* Page02ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page02ViewController.h; sourceTree = "<group>"; };
+		C77EC47D1F4FE5AA001E533D /* Page02ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page02ViewController.m; sourceTree = "<group>"; };
 		C7AD09191F4E57720053E500 /* exWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AD091D1F4E57720053E500 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7AD091F1F4E57720053E500 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +156,10 @@
 				C7AD09201F4E57720053E500 /* AppDelegate.m */,
 				C7AD09221F4E57720053E500 /* ViewController.h */,
 				C7AD09231F4E57720053E500 /* ViewController.m */,
+				C77EC4791F4FE598001E533D /* Page01ViewController.h */,
+				C77EC47A1F4FE598001E533D /* Page01ViewController.m */,
+				C77EC47C1F4FE5AA001E533D /* Page02ViewController.h */,
+				C77EC47D1F4FE5AA001E533D /* Page02ViewController.m */,
 				C7AD09251F4E57720053E500 /* Main.storyboard */,
 				C7AD09281F4E57720053E500 /* Assets.xcassets */,
 				C7AD092A1F4E57720053E500 /* LaunchScreen.storyboard */,
@@ -386,6 +396,8 @@
 			files = (
 				C7AD09241F4E57720053E500 /* ViewController.m in Sources */,
 				C7AD09211F4E57720053E500 /* AppDelegate.m in Sources */,
+				C77EC47B1F4FE598001E533D /* Page01ViewController.m in Sources */,
+				C77EC47E1F4FE5AA001E533D /* Page02ViewController.m in Sources */,
 				C7AD091E1F4E57720053E500 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -675,6 +687,7 @@
 				C7AD09481F4E57730053E500 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7AD09491F4E57730053E500 /* Build configuration list for PBXNativeTarget "exWidgetTests" */ = {
 			isa = XCConfigurationList;
@@ -683,6 +696,7 @@
 				C7AD094B1F4E57730053E500 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7AD094C1F4E57730053E500 /* Build configuration list for PBXNativeTarget "exWidgetUITests" */ = {
 			isa = XCConfigurationList;
@@ -691,6 +705,7 @@
 				C7AD094E1F4E57730053E500 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7AD09621F4E58C40053E500 /* Build configuration list for PBXNativeTarget "Widget" */ = {
 			isa = XCConfigurationList;
@@ -699,6 +714,7 @@
 				C7AD09641F4E58C40053E500 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

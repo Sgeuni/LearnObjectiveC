@@ -25,6 +25,11 @@
     [self setButtonStyle:self.button03];
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    NSLog(@"viewDidLayoutSubviews");
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -48,10 +53,14 @@
     }
 }
 
+- (UIEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(UIEdgeInsets)defaultMarginInsets {
+    return UIEdgeInsetsZero;
+}
+
 
 - (void) refresh {
     NSUserDefaults * sharedUserDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.geuniTest"];
-    self.label.text = [sharedUserDefaults objectForKey:@"ExtensionString"];
+    self.testLabel.text = [sharedUserDefaults objectForKey:@"ExtensionString"];
 }
 
 - (id) initWithCoder:(NSCoder *)aDecoder {
@@ -63,6 +72,7 @@
 }
 
 - (void) userDefaultsDidChange:(NSNotification *)notification {
+    NSLog(@"userDefaultsDidChange");
     [self refresh];
 }
 
@@ -78,7 +88,7 @@
 
 
 - (IBAction)buttonGoApp:(id)sender {
-    NSURL * url = [NSURL URLWithString:@"AppName://edu.geuni.exWidget"];
+    NSURL * url = [NSURL URLWithString:@"GeuniWidget://edu.geuni.exWidget"];
     [self.extensionContext openURL:url completionHandler:nil];
 }
 
