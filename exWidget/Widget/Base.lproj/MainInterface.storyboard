@@ -33,22 +33,22 @@
                                 <rect key="frame" x="26" y="10" width="268" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGU-Ax-2oc">
-                                        <rect key="frame" x="10" y="15" width="42" height="30"/>
-                                        <state key="normal" title="app01"/>
+                                        <rect key="frame" x="10" y="15" width="51" height="30"/>
+                                        <state key="normal" title="page01"/>
                                         <connections>
                                             <action selector="button01Click:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="rgQ-0t-Gif"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLd-UF-LLU">
-                                        <rect key="frame" x="112" y="15" width="44" height="30"/>
-                                        <state key="normal" title="app02"/>
+                                        <rect key="frame" x="108" y="15" width="53" height="30"/>
+                                        <state key="normal" title="page02"/>
                                         <connections>
                                             <action selector="button02Click:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Ew2-zW-lPw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymY-fG-q2S">
-                                        <rect key="frame" x="214" y="15" width="44" height="30"/>
-                                        <state key="normal" title="page2"/>
+                                        <rect key="frame" x="205" y="15" width="53" height="30"/>
+                                        <state key="normal" title="page03"/>
                                         <connections>
                                             <action selector="button03Click:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="9xD-oC-Y2r"/>
                                         </connections>

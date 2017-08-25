@@ -93,15 +93,18 @@
 }
 
 - (IBAction)button01Click:(id)sender {
-    NSLog(@"click Test1");
+    NSExtensionContext *context=[self extensionContext];
+    [context openURL:[NSURL URLWithString:@"GeuniWidget://page/page01"] completionHandler:nil];
 }
 
 - (IBAction)button02Click:(id)sender {
-    NSLog(@"click Test2");
+    NSExtensionContext *context=[self extensionContext];
+    [context openURL:[NSURL URLWithString:@"GeuniWidget://page/page02"] completionHandler:nil];
 }
 
 - (IBAction)button03Click:(id)sender {
-    NSLog(@"click Test3");
+    NSExtensionContext *context=[self extensionContext];
+    [context openURL:[NSURL URLWithString:@"GeuniWidget://page/page03"] completionHandler:nil];
 }
 
 
