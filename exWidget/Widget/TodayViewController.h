@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TodayViewController : UIViewController
-//@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @property (strong, nonatomic) UIView *page01View ;
 @property (strong, nonatomic) UIView *page02View ;

@@ -51,7 +51,7 @@
 
 - (void) refresh {
     NSUserDefaults * sharedUserDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.geuniTest"];
-//    self.label.text = [sharedUserDefaults objectForKey:@"ExtensionString"];
+    self.label.text = [sharedUserDefaults objectForKey:@"ExtensionString"];
 }
 
 - (id) initWithCoder:(NSCoder *)aDecoder {
@@ -81,6 +81,7 @@
     NSURL * url = [NSURL URLWithString:@"AppName://edu.geuni.exWidget"];
     [self.extensionContext openURL:url completionHandler:nil];
 }
+
 - (IBAction)button01Click:(id)sender {
     NSLog(@"click Test1");
 }
@@ -93,10 +94,6 @@
     NSLog(@"click Test3");
 }
 
-
-- (IBAction)testButtonAction:(id)sender {
-
-}
 
 - (void) buildViewPage02 {
     self.page02View = [[UIView alloc] initWithFrame:self.view.frame];
