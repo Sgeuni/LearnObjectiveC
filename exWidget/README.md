@@ -1,8 +1,7 @@
 # Widget Example
-## App을 통한 Widget수정 및 Widget으로 앱 실행시키기
+## App에서 Widget수정 / Widget으로 앱 deeplink실행 / Widget expand 기능 추가.
 
-![alt text](https://github.com/Sgeuni/LearnObjectiveC/blob/master/exWidget/screenShot_app.png) </br>
-![alt text](https://github.com/Sgeuni/LearnObjectiveC/blob/master/exWidget/screenShot_widget.png) </br>
+![alt text](https://github.com/Sgeuni/LearnObjectiveC/blob/master/exWidget/example.gif) </br>
 
 1. info.plist에 URL types 추가<br />
 ```html
