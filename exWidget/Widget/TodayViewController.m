@@ -19,10 +19,10 @@
     [super viewDidLoad];
     [self refresh];
     [self setPage01FrameView:self.page01View];
-    self.extensionContext.widgetLargestAvailableDisplayMode = NCWidgetDisplayModeExpanded;
     [self setButtonStyle:self.button01];
     [self setButtonStyle:self.button02];
     [self setButtonStyle:self.button03];
+    self.extensionContext.widgetLargestAvailableDisplayMode = NCWidgetDisplayModeExpanded;
 }
 
 - (void)viewDidLayoutSubviews {
@@ -46,6 +46,7 @@
 }
 
 - (void)widgetActiveDisplayModeDidChange:(NCWidgetDisplayMode)activeDisplayMode withMaximumSize:(CGSize)maxSize {
+    NSLog(@"activeDisplayMode = %ld", (long)activeDisplayMode);
     if (activeDisplayMode == NCWidgetDisplayModeExpanded) {
         self.preferredContentSize = CGSizeMake(0.0, 150.0);
     } else if (activeDisplayMode == NCWidgetDisplayModeCompact) {
