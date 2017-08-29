@@ -13,6 +13,10 @@
 		C77EC4FB1F50067C001E533D /* Page02ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77EC4F91F50067C001E533D /* Page02ViewController.xib */; };
 		C77EC5021F5006A9001E533D /* Page03ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77EC5001F5006A9001E533D /* Page03ViewController.m */; };
 		C77EC5031F5006A9001E533D /* Page03ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77EC5011F5006A9001E533D /* Page03ViewController.xib */; };
+		C79941971F54F50A00FA8681 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AD095B1F4E58C40053E500 /* MainInterface.storyboard */; };
+		C79941981F54F54000FA8681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7AD09281F4E57720053E500 /* Assets.xcassets */; };
+		C79941991F54F57C00FA8681 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AD09591F4E58C40053E500 /* TodayViewController.m */; };
+		C799419A1F55014000FA8681 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = C7AD09281F4E57720053E500 /* Assets.xcassets */; };
 		C7AD091E1F4E57720053E500 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AD091D1F4E57720053E500 /* main.m */; };
 		C7AD09211F4E57720053E500 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AD09201F4E57720053E500 /* AppDelegate.m */; };
 		C7AD09241F4E57720053E500 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AD09231F4E57720053E500 /* MainViewController.m */; };
@@ -381,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79941971F54F50A00FA8681 /* MainInterface.storyboard in Resources */,
 				C7AD092C1F4E57720053E500 /* LaunchScreen.storyboard in Resources */,
 				C7AD09291F4E57720053E500 /* Assets.xcassets in Resources */,
 				C77EC5031F5006A9001E533D /* Page03ViewController.xib in Resources */,
@@ -408,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79941981F54F54000FA8681 /* Assets.xcassets in Resources */,
 				C7AD095D1F4E58C40053E500 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79941991F54F57C00FA8681 /* TodayViewController.m in Sources */,
 				C7AD09241F4E57720053E500 /* MainViewController.m in Sources */,
 				C7AD09211F4E57720053E500 /* AppDelegate.m in Sources */,
 				C77EC4F51F500655001E533D /* Page01ViewController.m in Sources */,
@@ -448,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C799419A1F55014000FA8681 /* Assets.xcassets in Sources */,
 				C7AD095A1F4E58C40053E500 /* TodayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
