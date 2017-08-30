@@ -21,9 +21,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *button03;
 @property (weak, nonatomic) IBOutlet UIButton *buttonExpand;
 @property (weak, nonatomic) IBOutlet UIButton *buttonGoApp;
-
 @property (weak, nonatomic) IBOutlet UILabel *testLabel;
-
-
 
 @end
