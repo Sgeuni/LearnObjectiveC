@@ -64,15 +64,19 @@
     if([[url host] isEqualToString:@"page"]){
         if([[url path] isEqualToString:@"/main"]){
             [self.mainController setViewControllers:@[[[UIViewController alloc] init]] animated:YES];
+            [self.mainController setNavigationBarHidden:YES];
         }
         else if([[url path] isEqualToString:@"/page01"]){
             [self.mainController pushViewController:[[Page01ViewController alloc] init] animated:YES];
+            [self.mainController setNavigationBarHidden:YES];
         }
         else if([[url path] isEqualToString:@"/page02"]){
             [self.mainController pushViewController:[[Page02ViewController alloc] init] animated:YES];
+            [self.mainController setNavigationBarHidden:YES];
         }
         else if([[url path] isEqualToString:@"/page03"]){
             [self.mainController pushViewController:[[Page03ViewController alloc] init] animated:YES];
+            [self.mainController setNavigationBarHidden:YES];
         }
         return YES;
     }

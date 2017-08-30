@@ -25,12 +25,7 @@
 }
 
 - (IBAction)buttonGoMain:(id)sender {
-    
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"GeuniWidget://page/main"] options:@{} completionHandler:^(BOOL success) {
-        if (success) {
-            NSLog(@"success");
-        }
-    }];
+    [self.navigationController popViewControllerAnimated:YES];
     
 }
 
