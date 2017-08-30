@@ -30,6 +30,9 @@
     [self buildViewPage02];
     self.extensionContext.widgetLargestAvailableDisplayMode = NCWidgetDisplayModeExpanded;
     
+    self.buttonGoApp.hidden = YES;
+    self.testLabel.hidden = YES;
+    
 }
 
 - (void)viewDidLayoutSubviews {
