@@ -22,6 +22,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHP-5d-iIz">
+                                <rect key="frame" x="16" y="109" width="288" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="vod-C2-fpG">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="100"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8234347512142457" green="0.985316665182565" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1Yb-Gp-dwg"/>
+                                    <constraint firstItem="vod-C2-fpG" firstAttribute="top" secondItem="UHP-5d-iIz" secondAttribute="top" id="DQ3-62-G0u"/>
+                                    <constraint firstAttribute="trailing" secondItem="vod-C2-fpG" secondAttribute="trailing" id="GKu-d5-y4S"/>
+                                    <constraint firstItem="vod-C2-fpG" firstAttribute="leading" secondItem="UHP-5d-iIz" secondAttribute="leading" id="WjZ-gI-79Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="vod-C2-fpG" secondAttribute="bottom" id="bd6-si-ONY"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fq1-fj-Xqf">
                                 <rect key="frame" x="16" y="20" width="288" height="80"/>
                                 <subviews>
@@ -80,30 +96,15 @@
                                     <constraint firstItem="KGU-Ax-2oc" firstAttribute="height" secondItem="OLd-UF-LLU" secondAttribute="height" id="xwP-7B-oHN"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHP-5d-iIz">
-                                <rect key="frame" x="16" y="110" width="288" height="101"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="vod-C2-fpG">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="101"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.8234347512142457" green="0.985316665182565" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="vod-C2-fpG" firstAttribute="top" secondItem="UHP-5d-iIz" secondAttribute="top" id="DQ3-62-G0u"/>
-                                    <constraint firstAttribute="trailing" secondItem="vod-C2-fpG" secondAttribute="trailing" id="GKu-d5-y4S"/>
-                                    <constraint firstItem="vod-C2-fpG" firstAttribute="leading" secondItem="UHP-5d-iIz" secondAttribute="leading" id="WjZ-gI-79Q"/>
-                                    <constraint firstAttribute="bottom" secondItem="vod-C2-fpG" secondAttribute="bottom" id="bd6-si-ONY"/>
-                                </constraints>
-                            </view>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVl-Gr-idv">
-                                <rect key="frame" x="234" y="215" width="65" height="30"/>
+                                <rect key="frame" x="234" y="213.5" width="65" height="31.5"/>
                                 <state key="normal" title="OpenApp"/>
                                 <connections>
                                     <action selector="buttonGoApp:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="lN9-eQ-IhK"/>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrl-9v-FKh">
-                                <rect key="frame" x="144" y="221" width="33" height="19"/>
+                                <rect key="frame" x="144" y="219.5" width="33" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -112,7 +113,6 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="vVl-Gr-idv" secondAttribute="trailing" constant="5" id="2Di-rw-SQa"/>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="vVl-Gr-idv" secondAttribute="bottom" constant="5" id="F7M-Dh-VAx"/>
-                            <constraint firstItem="UHP-5d-iIz" firstAttribute="top" secondItem="Fq1-fj-Xqf" secondAttribute="bottom" constant="10" id="QRX-Gp-d6s"/>
                             <constraint firstItem="UHP-5d-iIz" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="SI2-aP-jSh"/>
                             <constraint firstItem="vrl-9v-FKh" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="TOL-xw-iWJ"/>
                             <constraint firstItem="vrl-9v-FKh" firstAttribute="top" secondItem="UHP-5d-iIz" secondAttribute="bottom" constant="10" id="VAK-Dv-42a"/>
