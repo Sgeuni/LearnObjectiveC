@@ -29,7 +29,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
+    
+    NSInteger num = 10000;
+    NSInteger resultSum = 0;
+    for ( int i=0 ; i < num ; i++ ){
+        if (i != [self sumOfDivisor:i]) {
+            if( i == [self sumOfDivisor:[self sumOfDivisor:i]]) {
+                resultSum = resultSum + i;
+            }
+        }
+    }
+    NSLog(@"totalSum = %ld", resultSum);
 }
 
 
@@ -38,7 +48,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (int)sumOfDivisor: (int)number {
+//자신을 제외한 약수의 합
+- (NSUInteger)sumOfDivisor: (NSUInteger)number {
     int sum = 0;
     for (int i = 1 ; i < number ; i++) {
         if (number % i == 0) {
