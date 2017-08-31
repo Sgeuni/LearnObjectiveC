@@ -25,9 +25,11 @@
 }
 
 - (void)showView {
-    self.testView = [[UIView alloc]
-                        initWithFrame:CGRectMake(40, 80, self.view.frame.size.width - 80, self.view.frame.size.height - 160)];
-    [self.view addSubview:self.testView];
+    NSURL *imageUrl = [NSURL URLWithString:@"http://www.williammalone.com/articles/create-html5-canvas-javascript-game-character/images/character-color.png"];
+    NSData *imageData = [NSData dataWithContentsOfURL:imageUrl];
+    UIImage *image = [[UIImage alloc] initWithData:imageData];
+    self.imageView.backgroundColor = [UIColor yellowColor];
+    self.imageView.image = image;
 }
 
 

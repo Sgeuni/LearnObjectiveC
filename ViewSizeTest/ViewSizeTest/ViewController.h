@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 
 @property (nonatomic, strong) UIView *testView;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 
 @end
