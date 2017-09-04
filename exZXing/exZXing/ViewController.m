@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self showBarcde:@"2013011195647013"];
+    [self showBarcde:@"1023455196647013"];
 }
 
 
