@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+
+target 'exWidget' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for exWidget
+  pod 'ZXingObjC', '~> 3.2.1'
+  
+  target 'exWidgetTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'exWidgetUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'Widget' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Widget
+  pod "MBCircularProgressBar"
+  pod 'ZXingObjC', '~> 3.2.1'
+
+end
