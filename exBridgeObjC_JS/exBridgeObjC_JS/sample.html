@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Sample</title>
+		<script>
+			var jsFuncFromObjC = function() {
+				alert ("function");
+			}
+
+			var objcFuncFromJS = function() {
+				window.location = "hybrid://objcFuncFromJS";
+			}
+			var sampleMethod = function() {
+				alert("method is called");
+			}
+
+			var changeDocument = function() {
+				var titleList = ["Hello world", "Bye world"];
+				var title = document.getElementById("titleName");
+				var curTitle = title.innerText;
+
+				if (curTitle == titleList[0]) {
+					title.innerText = titleList[1];
+				} else {
+					title.innerText = titleList[0];
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<p>Web page</p>
+		<p id="titleName">Hello world</p>
+		<input type="button" value="button01" onClick="objcFuncFromJS()"/>
+	</body>
+</html>
