@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3E-2n-kQt" customClass="MBCircularProgressBarView">
+                                <rect key="frame" x="87" y="233" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9QJ-js-XAo"/>
+                                    <constraint firstAttribute="width" constant="200" id="G1G-yA-RSD"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6Z-zb-uBk">
+                                <rect key="frame" x="164" y="524" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="MzS-nJ-RnZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="TUY-2b-cmH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="testButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ny-VW-GhA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6M-Ps-LBE">
+                                <rect key="frame" x="168" y="617" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqI-IF-Dux"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="P6M-Ps-LBE" secondAttribute="bottom" constant="20" id="4Zm-aW-caq"/>
+                            <constraint firstItem="P6M-Ps-LBE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gMA-jm-rsS"/>
+                            <constraint firstItem="x6Z-zb-uBk" firstAttribute="top" secondItem="n3E-2n-kQt" secondAttribute="bottom" constant="50" id="jUU-dh-qIP"/>
+                            <constraint firstItem="x6Z-zb-uBk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oBG-es-MZm"/>
+                            <constraint firstItem="n3E-2n-kQt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wpY-Jj-HFT"/>
+                            <constraint firstItem="n3E-2n-kQt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xr6-WY-DY9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circleProgress" destination="n3E-2n-kQt" id="Io3-KZ-G1y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

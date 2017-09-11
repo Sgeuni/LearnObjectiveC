@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F9F06D61F666DA200A969B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9F06D51F666DA200A969B5 /* main.m */; };
+		1F9F06D91F666DA200A969B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9F06D81F666DA200A969B5 /* AppDelegate.m */; };
+		1F9F06DC1F666DA200A969B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9F06DB1F666DA200A969B5 /* ViewController.m */; };
+		1F9F06DF1F666DA200A969B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9F06DD1F666DA200A969B5 /* Main.storyboard */; };
+		1F9F06E11F666DA200A969B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9F06E01F666DA200A969B5 /* Assets.xcassets */; };
+		1F9F06E41F666DA200A969B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9F06E21F666DA200A969B5 /* LaunchScreen.storyboard */; };
+		1F9F06EF1F666DA200A969B5 /* progressAnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9F06EE1F666DA200A969B5 /* progressAnimationTestTests.m */; };
+		1F9F06FA1F666DA200A969B5 /* progressAnimationTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9F06F91F666DA200A969B5 /* progressAnimationTestUITests.m */; };
+		5393596FE5D406CEB75B6736 /* libPods-progressAnimationTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F219821EF7190989CE86334E /* libPods-progressAnimationTest.a */; };
+		76A16BD0210EBEBAA9059F4B /* libPods-progressAnimationTestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C08FF88675F60F05924D4B /* libPods-progressAnimationTestUITests.a */; };
+		C953F645D18DC31BFF250AC7 /* libPods-progressAnimationTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C41B35C4F4528781262617 /* libPods-progressAnimationTestTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F9F06EB1F666DA200A969B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F9F06C91F666DA200A969B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F9F06D01F666DA200A969B5;
+			remoteInfo = progressAnimationTest;
+		};
+		1F9F06F61F666DA200A969B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F9F06C91F666DA200A969B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F9F06D01F666DA200A969B5;
+			remoteInfo = progressAnimationTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05C41B35C4F4528781262617 /* libPods-progressAnimationTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-progressAnimationTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07648A1CAC1B502D095C6492 /* Pods-progressAnimationTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-progressAnimationTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-progressAnimationTestUITests/Pods-progressAnimationTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F9F06D11F666DA200A969B5 /* progressAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = progressAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9F06D51F666DA200A969B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F9F06D71F666DA200A969B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F9F06D81F666DA200A969B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F9F06DA1F666DA200A969B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F9F06DB1F666DA200A969B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F9F06DE1F666DA200A969B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F9F06E01F666DA200A969B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F9F06E31F666DA200A969B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F9F06E51F666DA200A969B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9F06EA1F666DA200A969B5 /* progressAnimationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = progressAnimationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9F06EE1F666DA200A969B5 /* progressAnimationTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = progressAnimationTestTests.m; sourceTree = "<group>"; };
+		1F9F06F01F666DA200A969B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9F06F51F666DA200A969B5 /* progressAnimationTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = progressAnimationTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9F06F91F666DA200A969B5 /* progressAnimationTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = progressAnimationTestUITests.m; sourceTree = "<group>"; };
+		1F9F06FB1F666DA200A969B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA0570A1C25A257508A2139 /* Pods-progressAnimationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-progressAnimationTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-progressAnimationTest/Pods-progressAnimationTest.release.xcconfig"; sourceTree = "<group>"; };
+		30BC7680E84F2176890B0C04 /* Pods-progressAnimationTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-progressAnimationTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-progressAnimationTestTests/Pods-progressAnimationTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		861CC8B656594E67B151D2C0 /* Pods-progressAnimationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-progressAnimationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-progressAnimationTest/Pods-progressAnimationTest.debug.xcconfig"; sourceTree = "<group>"; };
+		8D677D70EC9627B4E6ABCFB2 /* Pods-progressAnimationTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-progressAnimationTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-progressAnimationTestUITests/Pods-progressAnimationTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		93E443E87015B7FB323F7F4D /* Pods-progressAnimationTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-progressAnimationTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-progressAnimationTestTests/Pods-progressAnimationTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		D3C08FF88675F60F05924D4B /* libPods-progressAnimationTestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-progressAnimationTestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F219821EF7190989CE86334E /* libPods-progressAnimationTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-progressAnimationTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F9F06CE1F666DA200A969B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5393596FE5D406CEB75B6736 /* libPods-progressAnimationTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9F06E71F666DA200A969B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C953F645D18DC31BFF250AC7 /* libPods-progressAnimationTestTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9F06F21F666DA200A969B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A16BD0210EBEBAA9059F4B /* libPods-progressAnimationTestUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F9F06C81F666DA200A969B5 = {
+			isa = PBXGroup;
+			children = (
+				1F9F06D31F666DA200A969B5 /* progressAnimationTest */,
+				1F9F06ED1F666DA200A969B5 /* progressAnimationTestTests */,
+				1F9F06F81F666DA200A969B5 /* progressAnimationTestUITests */,
+				1F9F06D21F666DA200A969B5 /* Products */,
+				B99E2B273BF8C0CA75CED01A /* Pods */,
+				B0F99E3FEA10600F54EA2565 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F9F06D21F666DA200A969B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F9F06D11F666DA200A969B5 /* progressAnimationTest.app */,
+				1F9F06EA1F666DA200A969B5 /* progressAnimationTestTests.xctest */,
+				1F9F06F51F666DA200A969B5 /* progressAnimationTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F9F06D31F666DA200A969B5 /* progressAnimationTest */ = {
+			isa = PBXGroup;
+			children = (
+				1F9F06D71F666DA200A969B5 /* AppDelegate.h */,
+				1F9F06D81F666DA200A969B5 /* AppDelegate.m */,
+				1F9F06DA1F666DA200A969B5 /* ViewController.h */,
+				1F9F06DB1F666DA200A969B5 /* ViewController.m */,
+				1F9F06DD1F666DA200A969B5 /* Main.storyboard */,
+				1F9F06E01F666DA200A969B5 /* Assets.xcassets */,
+				1F9F06E21F666DA200A969B5 /* LaunchScreen.storyboard */,
+				1F9F06E51F666DA200A969B5 /* Info.plist */,
+				1F9F06D41F666DA200A969B5 /* Supporting Files */,
+			);
+			path = progressAnimationTest;
+			sourceTree = "<group>";
+		};
+		1F9F06D41F666DA200A969B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F9F06D51F666DA200A969B5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F9F06ED1F666DA200A969B5 /* progressAnimationTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F9F06EE1F666DA200A969B5 /* progressAnimationTestTests.m */,
+				1F9F06F01F666DA200A969B5 /* Info.plist */,
+			);
+			path = progressAnimationTestTests;
+			sourceTree = "<group>";
+		};
+		1F9F06F81F666DA200A969B5 /* progressAnimationTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F9F06F91F666DA200A969B5 /* progressAnimationTestUITests.m */,
+				1F9F06FB1F666DA200A969B5 /* Info.plist */,
+			);
+			path = progressAnimationTestUITests;
+			sourceTree = "<group>";
+		};
+		B0F99E3FEA10600F54EA2565 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F219821EF7190989CE86334E /* libPods-progressAnimationTest.a */,
+				05C41B35C4F4528781262617 /* libPods-progressAnimationTestTests.a */,
+				D3C08FF88675F60F05924D4B /* libPods-progressAnimationTestUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B99E2B273BF8C0CA75CED01A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				861CC8B656594E67B151D2C0 /* Pods-progressAnimationTest.debug.xcconfig */,
+				2EA0570A1C25A257508A2139 /* Pods-progressAnimationTest.release.xcconfig */,
+				30BC7680E84F2176890B0C04 /* Pods-progressAnimationTestTests.debug.xcconfig */,
+				93E443E87015B7FB323F7F4D /* Pods-progressAnimationTestTests.release.xcconfig */,
+				07648A1CAC1B502D095C6492 /* Pods-progressAnimationTestUITests.debug.xcconfig */,
+				8D677D70EC9627B4E6ABCFB2 /* Pods-progressAnimationTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F9F06D01F666DA200A969B5 /* progressAnimationTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F9F06FE1F666DA200A969B5 /* Build configuration list for PBXNativeTarget "progressAnimationTest" */;
+			buildPhases = (
+				6F9BE2765448C4D6FC9EFEBF /* [CP] Check Pods Manifest.lock */,
+				1F9F06CD1F666DA200A969B5 /* Sources */,
+				1F9F06CE1F666DA200A969B5 /* Frameworks */,
+				1F9F06CF1F666DA200A969B5 /* Resources */,
+				9384777DB0D4BFF815414A84 /* [CP] Embed Pods Frameworks */,
+				661A2194F314B486CFA6FEA7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = progressAnimationTest;
+			productName = progressAnimationTest;
+			productReference = 1F9F06D11F666DA200A969B5 /* progressAnimationTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F9F06E91F666DA200A969B5 /* progressAnimationTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F9F07011F666DA200A969B5 /* Build configuration list for PBXNativeTarget "progressAnimationTestTests" */;
+			buildPhases = (
+				EECF459FA8377C1E2BC33CEE /* [CP] Check Pods Manifest.lock */,
+				1F9F06E61F666DA200A969B5 /* Sources */,
+				1F9F06E71F666DA200A969B5 /* Frameworks */,
+				1F9F06E81F666DA200A969B5 /* Resources */,
+				6DCA9D1318312134761CEA76 /* [CP] Embed Pods Frameworks */,
+				D66C5BDED1D6FF9A95C4E1ED /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F9F06EC1F666DA200A969B5 /* PBXTargetDependency */,
+			);
+			name = progressAnimationTestTests;
+			productName = progressAnimationTestTests;
+			productReference = 1F9F06EA1F666DA200A969B5 /* progressAnimationTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F9F06F41F666DA200A969B5 /* progressAnimationTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F9F07041F666DA200A969B5 /* Build configuration list for PBXNativeTarget "progressAnimationTestUITests" */;
+			buildPhases = (
+				647473694298CABEC18F9C8C /* [CP] Check Pods Manifest.lock */,
+				1F9F06F11F666DA200A969B5 /* Sources */,
+				1F9F06F21F666DA200A969B5 /* Frameworks */,
+				1F9F06F31F666DA200A969B5 /* Resources */,
+				BBA37B6C49F96AAE0CCC0964 /* [CP] Embed Pods Frameworks */,
+				68BFDA11C97AA33303AB3694 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F9F06F71F666DA200A969B5 /* PBXTargetDependency */,
+			);
+			name = progressAnimationTestUITests;
+			productName = progressAnimationTestUITests;
+			productReference = 1F9F06F51F666DA200A969B5 /* progressAnimationTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F9F06C91F666DA200A969B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = mteletech;
+				TargetAttributes = {
+					1F9F06D01F666DA200A969B5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					1F9F06E91F666DA200A969B5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F9F06D01F666DA200A969B5;
+					};
+					1F9F06F41F666DA200A969B5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F9F06D01F666DA200A969B5;
+					};
+				};
+			};
+			buildConfigurationList = 1F9F06CC1F666DA200A969B5 /* Build configuration list for PBXProject "progressAnimationTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F9F06C81F666DA200A969B5;
+			productRefGroup = 1F9F06D21F666DA200A969B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F9F06D01F666DA200A969B5 /* progressAnimationTest */,
+				1F9F06E91F666DA200A969B5 /* progressAnimationTestTests */,
+				1F9F06F41F666DA200A969B5 /* progressAnimationTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F9F06CF1F666DA200A969B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9F06E41F666DA200A969B5 /* LaunchScreen.storyboard in Resources */,
+				1F9F06E11F666DA200A969B5 /* Assets.xcassets in Resources */,
+				1F9F06DF1F666DA200A969B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9F06E81F666DA200A969B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9F06F31F666DA200A969B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		647473694298CABEC18F9C8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-progressAnimationTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		661A2194F314B486CFA6FEA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-progressAnimationTest/Pods-progressAnimationTest-resources.sh",
+				"$PODS_CONFIGURATION_BUILD_DIR/MBCircularProgressBar/MBCircularProgressBar.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-progressAnimationTest/Pods-progressAnimationTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68BFDA11C97AA33303AB3694 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-progressAnimationTestUITests/Pods-progressAnimationTestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DCA9D1318312134761CEA76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-progressAnimationTestTests/Pods-progressAnimationTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F9BE2765448C4D6FC9EFEBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-progressAnimationTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9384777DB0D4BFF815414A84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-progressAnimationTest/Pods-progressAnimationTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBA37B6C49F96AAE0CCC0964 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-progressAnimationTestUITests/Pods-progressAnimationTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D66C5BDED1D6FF9A95C4E1ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-progressAnimationTestTests/Pods-progressAnimationTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EECF459FA8377C1E2BC33CEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-progressAnimationTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F9F06CD1F666DA200A969B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9F06DC1F666DA200A969B5 /* ViewController.m in Sources */,
+				1F9F06D91F666DA200A969B5 /* AppDelegate.m in Sources */,
+				1F9F06D61F666DA200A969B5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9F06E61F666DA200A969B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9F06EF1F666DA200A969B5 /* progressAnimationTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9F06F11F666DA200A969B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9F06FA1F666DA200A969B5 /* progressAnimationTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F9F06EC1F666DA200A969B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F9F06D01F666DA200A969B5 /* progressAnimationTest */;
+			targetProxy = 1F9F06EB1F666DA200A969B5 /* PBXContainerItemProxy */;
+		};
+		1F9F06F71F666DA200A969B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F9F06D01F666DA200A969B5 /* progressAnimationTest */;
+			targetProxy = 1F9F06F61F666DA200A969B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F9F06DD1F666DA200A969B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F9F06DE1F666DA200A969B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F9F06E21F666DA200A969B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F9F06E31F666DA200A969B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F9F06FC1F666DA200A969B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F9F06FD1F666DA200A969B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F9F06FF1F666DA200A969B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 861CC8B656594E67B151D2C0 /* Pods-progressAnimationTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = progressAnimationTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mttapp.progressAnimationTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F9F07001F666DA200A969B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA0570A1C25A257508A2139 /* Pods-progressAnimationTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = progressAnimationTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mttapp.progressAnimationTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F9F07021F666DA200A969B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30BC7680E84F2176890B0C04 /* Pods-progressAnimationTestTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = progressAnimationTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mttapp.progressAnimationTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/progressAnimationTest.app/progressAnimationTest";
+			};
+			name = Debug;
+		};
+		1F9F07031F666DA200A969B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E443E87015B7FB323F7F4D /* Pods-progressAnimationTestTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = progressAnimationTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mttapp.progressAnimationTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/progressAnimationTest.app/progressAnimationTest";
+			};
+			name = Release;
+		};
+		1F9F07051F666DA200A969B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07648A1CAC1B502D095C6492 /* Pods-progressAnimationTestUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = progressAnimationTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mttapp.progressAnimationTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = progressAnimationTest;
+			};
+			name = Debug;
+		};
+		1F9F07061F666DA200A969B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D677D70EC9627B4E6ABCFB2 /* Pods-progressAnimationTestUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = progressAnimationTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mttapp.progressAnimationTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = progressAnimationTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F9F06CC1F666DA200A969B5 /* Build configuration list for PBXProject "progressAnimationTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F9F06FC1F666DA200A969B5 /* Debug */,
+				1F9F06FD1F666DA200A969B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F9F06FE1F666DA200A969B5 /* Build configuration list for PBXNativeTarget "progressAnimationTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F9F06FF1F666DA200A969B5 /* Debug */,
+				1F9F07001F666DA200A969B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F9F07011F666DA200A969B5 /* Build configuration list for PBXNativeTarget "progressAnimationTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F9F07021F666DA200A969B5 /* Debug */,
+				1F9F07031F666DA200A969B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F9F07041F666DA200A969B5 /* Build configuration list for PBXNativeTarget "progressAnimationTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F9F07051F666DA200A969B5 /* Debug */,
+				1F9F07061F666DA200A969B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F9F06C91F666DA200A969B5 /* Project object */;
+}

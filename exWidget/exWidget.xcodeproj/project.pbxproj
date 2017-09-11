@@ -675,7 +675,7 @@
 				DEVELOPMENT_TEAM = W4T94USG8M;
 				INFOPLIST_FILE = Widget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.geuni.exWidget.Widget;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.geuni.exWidget.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -688,7 +688,7 @@
 				DEVELOPMENT_TEAM = W4T94USG8M;
 				INFOPLIST_FILE = Widget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.geuni.exWidget.Widget;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.geuni.exWidget.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
