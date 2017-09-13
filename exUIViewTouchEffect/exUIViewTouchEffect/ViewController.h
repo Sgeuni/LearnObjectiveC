@@ -11,7 +11,6 @@
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIView *btnUiView;
-
 @property UILongPressGestureRecognizer *btnUiViewTap;
 @property (strong, nonatomic) IBOutlet UILabel *labelGesture;
 
